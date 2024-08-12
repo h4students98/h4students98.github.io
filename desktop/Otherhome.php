@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Other Project Colombini</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="../assets/css/styleother.css">
+</head>
+<body>
+
+	<script> var activePage = "Otherhome"; </script>  <!-- Set the active page as Otherhome -->
+	<script type="text/javascript" language="javascript" src="../includes/Loadmenu-en.js"></script>
+
+<div class="main-content">	<!-- ---START OF MAIN CONTENT--- -->
+	<div class="title">Other personal projects</div>
+	<div class="textmain">Here you will find self-led projects for personal development. You will also find some lecture i wrote for the brief period I dedicated to teaching.</div>
+		
+	<div class="row">
+        <div class="twocolumn">
+            <div class="otherbox1">
+                <h1>Academic Notes</h1>
+                <h2>Written during my personal studies.</h2>
+	                <div class="image-and-button">
+	                <div class="col_other1">
+	                   	<img src="../assets/images/book2_img.png" alt="download icon" width="65%">
+					</div>
+	            	<div class="col_other2">
+	            		<a href="Notes.php" class="rounded-button1">Explore more</a>
+	            	</div>
+	            </div>
+            </div>
+        </div>
+        <div class="twocolumn">
+            <div class="otherbox2">
+                <h1>Personal Lectures</h1>
+                <h2>From my personal experience as high school teacher.</h2>
+                <div class="smallbox"></div> 
+	                <div class="image-and-button">
+	                <div class="col_other1">
+	                   	<img src="../assets/images/blackboard_eng_img.png" alt="download icon" width="100%">
+					</div>
+	            	<div class="col_other2">
+	            		<a href="Lectures.php" class="rounded-button2">Explore more</a>
+	            	</div>
+	            </div>
+            </div>
+        </div>
+    </div>
+        <div class="smallbox"></div><div class="smallbox"></div> 
+    <div class="row">
+        <div class="twocolumn">
+            <div class="otherbox3">
+                <h1></h1>
+                <div class="my_p"></div>
+	                <div class="image-and-button">
+	                <div class="col_other1">
+	                   	<img src="../assets/images/work_img.png" alt="download icon" width="60%">
+					</div>
+	            	<div class="col_other2">
+	            		<a href="#" class="rounded-button3">Explore more</a>
+	            	</div>
+	            </div>
+            </div>
+        </div>
+        <div class="twocolumn">
+            <div class="otherbox4">
+                <h1></h1>
+                <div class="my_p"></div>
+	                <div class="image-and-button">
+	                <div class="col_other1">
+	                   	<img src="../assets/images/work_img.png" alt="download icon" width="60%">
+					</div>
+	            	<div class="col_other2">
+	            		<a href="#" class="rounded-button4">Explore more</a>
+	            	</div>
+	            </div>
+            </div>
+        </div>
+    </div>
+
+</div>  <!-- ---END OF MAIN CONTENT--- -->
+	
+<div class="spacebox"></div> 
+
+<footer class="footer">
+	<script type="text/javascript" language="javascript" src="../includes/Loadfooter-en.js"></script>
+</footer>
+</body>
+</html>
