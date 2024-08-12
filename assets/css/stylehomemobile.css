@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  letter-spacing:1px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #202A70;
+  color: #162468;
+  font-family: 'Rubik'; /* Use Helvetica font */
+  text-decoration: none;
+   /* background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 15%, rgba(0,212,255,1) 100%); */
+   /* background: linear-gradient(to bottom right, #003366, #00ffff); */
+}
+
+
+h1 {
+  font-family: 'Rubik'; /* Use Helvetica font */
+}
+
+/* For putting footer at end of page */
+.main-content {
+  font-family: "Helvetica", sans-serif; /* Set font family to Helvetica */
+  flex: 1 0 auto;
+  max-width: 100%; /* Add this line to limit the maximum width */
+}
+
+.footer {
+  flex-shrink: 0;
+}
+
+/* My gradient boxes */
+.gradientbox_line {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #0080FF;
+  background-image: #202A70;
+  color: #162468;
+  font-family: 'Rubik'; /* Use Helvetica font */
+  text-decoration: none;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.gradientbox_line a{
+  color: #162468;
+  font-family: 'Rubik'; /* Use Helvetica font */
+}
+
+.gradientbox_line p{
+  color: #162468;
+  font-family: 'Rubik'; /* Use Helvetica font */
+}
+
+/* TO FIX */
+.rounded-image {
+  display: flex;
+  max-width: 100%;
+  height: 40%;
+  object-position: top;
+  border-radius: 50%;
+}
+
+/* Spacebox */
+.spacebox {
+  padding: 5px;
+}
+
+/* Footer styles */
+.blockfooter {
+  bottom: 0;
+  width: 100%; /* Set the width to 100% */
+  box-sizing: border-box;
+  background-color: #020024;
+  text-align: center;
+  padding: 10px;
+  color: #FFB757;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.3);
+  flex-shrink: 0;
+}
+
+.blockfooter a {
+  color: #FFB757;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.blockfooter a:hover {
+  text-decoration: underline;
+}
+
+.blockfooter .download {
+  background-color: #FFB757;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.blockfooter .download:hover {
+  background-color: #FFB757;
+}
+
+.row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .column1 {
+      flex: 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .column2 {
+      flex: 60%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+/* Textbox fancy */
+
+.textbox {
+  font-family: "Rubik", sans-serif; /* Set font family to Helvetica */
+  border: 5px solid #BDB6FF;
+  border-radius: 30px;
+  background-color: #E8E0FF;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  color: #162468;
+}
+
+/* Add this to remove the default link styling */
+.textbox a {
+  text-decoration: none; /* Remove underline */
+  color: #162468; /* Set the text color to black */
+}
+
+.textbox h1 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.textbox p {
+  font-size: 18px;
+  text-align: left;
+}
+
+.textbox_bg {
+  border: 3px solid #84347C;
+  /* border-radius: 30px; */
+  background-color: #CB4A74; /* E0368B */
+  color: #162468;
+  width: 80%;
+  padding: 5%;
+  margin: 4%;
+  text-align: center;
+}
+
+.textbox_bg:hover {
+  border: 3px solid #CB4A74;
+  border-radius: 15px;
+  background-color: #84347C;
+  width: 80%;
+  padding: 5%
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  /* transform: translateY(+2px); */
+}
+
+
+.textbox_bg h1 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.textbox_bg p {
+  font-size: 18px;
+  text-align: left;
+}
