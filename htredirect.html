@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/stylehome.css">
+</head>
+<body>
+    <h1>About Us</h1>
+    <p>This is the desktop version of the about page.</p>
+
+    <!-- Manual Redirect Links -->
+    <p>
+        <a href="about-en.php">English Version</a> |
+        <a href="about-it.php">Italian Version</a>
+    </p>
+
+    <!-- JavaScript Redirection -->
+    <script>
+        // Function to check if the user is on a mobile device
+        function isMobile() {
+            return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        // Function to get the user's preferred language
+        function getUserLanguage() {
+            return navigator.language.substring(0, 2);
+        }
+
+        // Define the redirection URL based on device and language
+        var redirectUrl = '';
+
+        if (isMobile()) {
+            if (getUserLanguage() === 'it') {
+                redirectUrl = 'mobile/about-it-mobile.php';
+            } else {
+                redirectUrl = 'mobile/about-en-mobile.php';
+            }
+        } else {
+            if (getUserLanguage() === 'it') {
+                redirectUrl = 'desktop/about-it.php';
+            } else {
+                redirectUrl = 'desktop/about-en.php';
+            }
+        }
+
+        // Perform the redirection
+        window.location.href = redirectUrl;
+    </script>
+</body>
+</html>

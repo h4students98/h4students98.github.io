@@ -1,0 +1,40 @@
+<?php
+// Function to check if the user is on a mobile device
+function isMobile() {
+    return isset($_SERVER['HTTP_USER_AGENT']) && preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER['HTTP_USER_AGENT']);
+}
+
+// Function to get the user's preferred language
+function getUserLanguage() {
+    // You can implement more advanced language detection here if needed
+    // For simplicity, let's assume English by default
+    return isset($_SERVER['HTTP_ACCEPT_LANGUAGE']) ? substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2) : 'en';
+}
+
+// Check if the user is on mobile
+$isMobile = isMobile();
+
+// Get the user's preferred language
+$userLanguage = getUserLanguage();
+
+// Define the redirection URL based on device and language
+$redirectUrl = '';
+
+if ($isMobile) {
+    if ($userLanguage === 'it') {
+        $redirectUrl = 'mobile/about-it.php';
+    } else {
+        $redirectUrl = 'mobile/about-en.php';
+    }
+} else {
+    if ($userLanguage === 'it') {
+        $redirectUrl = 'desktop/about-it.php';
+    } else {
+        $redirectUrl = 'desktop/about-en.php';
+    }
+}
+
+// Perform the redirection
+header("Location: $redirectUrl");
+exit;
+?>
