@@ -12,8 +12,8 @@
 
     <!-- Manual Redirect Links -->
     <p>
-        <a href="about-en.php">English Version</a> |
-        <a href="about-it.php">Italian Version</a>
+        <a href="about-en.html">English Version</a> |
+        <a href="about-it.html">Italian Version</a>
     </p>
 
     <!-- JavaScript Redirection -->
@@ -33,15 +33,15 @@
 
         if (isMobile()) {
             if (getUserLanguage() === 'it') {
-                redirectUrl = 'mobile/about-it-mobile.php';
+                redirectUrl = 'mobile/about-it-mobile.html';
             } else {
-                redirectUrl = 'mobile/about-en-mobile.php';
+                redirectUrl = 'mobile/about-en-mobile.html';
             }
         } else {
             if (getUserLanguage() === 'it') {
-                redirectUrl = 'desktop/about-it.php';
+                redirectUrl = 'desktop/about-it.html';
             } else {
-                redirectUrl = 'desktop/about-en.php';
+                redirectUrl = 'desktop/about-en.html';
             }
         }
 
