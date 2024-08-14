@@ -23,7 +23,7 @@ const downloadCV = `<a href="../downloads/pdf/CV_Colombini_eng.pdf" download ${d
 // Combine all sections
 const footerContent = `
   <div class="blockfooter">
-    Website of William Colombini | Contact me: ${email} | ${phone} | ${instagram} | Download CV: ${downloadCV}
+    Website of William Colombini | Contact me: ${email} | ${instagram} | Download CV: ${downloadCV}
   </div>
 `;
 
