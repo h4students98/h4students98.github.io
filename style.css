@@ -21,7 +21,7 @@ a:hover,
 }
 
 /* Ensure the transition applies on all interactive items */
-a, .btn, .icon, .project-img, .details-container, input, textarea {
+a, .btn, .icon, .project-i mg, .details-container, input, textarea {
   transition: transform 0.3s ease; /* Initial transition setup */
 }
 
@@ -256,7 +256,7 @@ section {
   display: flex; /* Centers the image within the container */
   align-items: center; /* Vertically centers the image */
   justify-content: center; /* Horizontally centers the image */
-  max-width: 100%; /* Prevents overflow */
+  max-width: 50%; /* Prevents overflow */
   z-index: 1; /* Ensures the content is above the gradient */
   height: 400px;
   width: 400px;
@@ -409,10 +409,11 @@ section {
 }
 
 .experience-sub-title {
-  color: var(--fourth-color);
+  margin-top: 1rem;
+  color: var(--fifth-color);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .experience-details-container {
