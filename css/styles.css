@@ -114,6 +114,11 @@ html,body {
   z-index: -1;
 }
 
+.header__content{
+  padding-top: 200px;
+  padding-bottom: 140px;
+}
+
 .navbar .navbar-nav > li > a, .navbar .navbar-brand, .navbar .navbar-nav > li > a:focus{
   background-color: transparent;
   color: var(--primary-color);
@@ -138,8 +143,9 @@ html,body {
 .navbar-brand{
   font-size: 25px;
   font-weight: 300;
+  justify-content: center;
   padding-left: 45px;
-  background-position: left center;
+  background-position: center;
 }
 
 #darktheme-icon{
