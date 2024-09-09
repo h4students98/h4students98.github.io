@@ -19,7 +19,7 @@
   src: url(../assets/fonts/Roboto-Light.ttf);
 }
 
-:root{
+root{
   --primary-color: #EEEEEE;
   --secondary-color: #7FA1C3;
   --third-color: #6482AD;
@@ -27,6 +27,8 @@
   --fifth-color: #201E43;
   --white: #FFFFFF;
   --black: #000000;
+  --bg1: #e9f0f3;
+  --bg2: #d5e0ec;
 }
 .dark-theme{
   --primary-color: #201E43;
@@ -36,11 +38,27 @@
   --fifth-color: #EEEEEE;
   --white: #000000;
   --black: #FFFFFF;
+  --bg1: #201E43;
+  --bg2: #293E52;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--primary-color);
+    --s: 102px; /* control the size*/
+  --c1: var(--bg1);
+  --c2: var(--white);
+  --c3: var(--bg2);
+  
+  --_g: var(--c3) 0 120deg,#0000 0;
+  background:
+    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                          var(--c1) 0 calc(500%/6),var(--c2) 0);
+  background-size: calc(1.732*var(--s)) var(--s);
 }
 
 @media (min-width: 1400px) {
