@@ -26,17 +26,17 @@
         <div class="navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="index.html">Homepage</a></li>
-            <li><a href="#appunti">Appunti</a></li>
-            <li><a href="#esercizi">Esercizi</a></li>
-            <li><a href="#simulazioni">Simulazioni</a></li>
-            <li><a href="#test">Test</a></li>
+            <li><a href="#appunti" onclick="toggleMenu()">Appunti</a></li>
+            <li><a href="#esercizi" onclick="toggleMenu()">Esercizi</a></li>
+            <li><a href="#simulazioni" onclick="toggleMenu()">Simulazioni</a></li>
+            <li><a href="#test" onclick="toggleMenu()">Test</a></li>
           </ul>   
         <img src="./assets/sun-icon.svg" id="darktheme-icon">
         </div>
       </nav>
   </header>
 
-  <section class="portfolio">
+  <section class="portfolio" id="appunti">
     <div class="container">
       <div class="page-section">
         <h2 class="page-section__title">Appunti di Fisica</h2>
@@ -126,7 +126,7 @@
   </section>
 
 
-  <section class="portfolio">
+  <section class="portfolio" id="esercizi">
     <div class="container">
       <div class="page-section">
         <h2 class="page-section__title">Esercizi di fisica</h2>
@@ -137,7 +137,7 @@
   </section>
 </div>
 
-  <section class="portfolio">
+  <section class="portfolio" id="simulazioni">
     <div class="container">
       <div class="page-section">
         <h2 class="page-section__title">Simulazioni di fisica</h2>
@@ -148,7 +148,7 @@
   </section>
 </div>
 
-  <section class="portfolio">
+  <section class="portfolio" id="test">
     <div class="container">
       <div class="page-section">
         <h2 class="page-section__title">Verifiche di fisica</h2>
@@ -193,7 +193,35 @@
           </div>
         </div>
       </form>
+
+       <div id="socials-container">
+          <img
+            src="./assets/youtube-icon.svg"
+            alt="My Youtube profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+          <img
+            src="./assets/twitch-icon.svg"
+            alt="My Twitch profile"
+            class="icon"
+            onclick="location.href='https://www.twitch.tv/wills_wandering_corner?sr=a'"
+          />
+          <img
+            src="./assets/instagram-icon.svg"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+          <img
+            src="./assets/mail-icon.svg"
+            alt="My Mail profile"
+            class="icon"
+            onclick="location.href='mailto:h4students98@gmail.com'"
+          />
+        </div>
     </section>
+   
   <script src="assets/jquery/jquery-3.2.1.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script src="js/mixitup.js"></script>
