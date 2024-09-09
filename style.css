@@ -256,7 +256,7 @@ section {
   display: flex; /* Centers the image within the container */
   align-items: center; /* Vertically centers the image */
   justify-content: center; /* Horizontally centers the image */
-  max-width: 50%; /* Prevents overflow */
+  max-width: 40%; /* Prevents overflow */
   z-index: 1; /* Ensures the content is above the gradient */
   height: 400px;
   width: 400px;
@@ -526,23 +526,33 @@ article .icon {
 }
 
 .contact-info-container button {
+  padding: 10px 10px 10px 10px;
   cursor: pointer;
   font-weight: 600;
   transition: all 300ms ease;
-  padding: 0.5rem;
-  width: 8rem;
+  width: 10rem;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  background: var(--fifth-color);
+  color: var(--primary-color);
+  border: var(--fifth-color) 0.1rem solid;
 }
 
 .contact-info-container button:hover {
-  background: rgb(53, 53, 53);
-  color: white;
-  border: rgb(255, 255, 255) 0.1rem solid;
+  background: var(--primary-color);
+  color: var(--fifth-color);
+  border: var(--fifth-color) 0.1rem solid;
 }
 
 .contact-info-container p {
   font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
 }
 
 .icon-nolink {
