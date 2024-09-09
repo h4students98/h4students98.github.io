@@ -27,8 +27,8 @@
   --fifth-color: #201E43;
   --white: #FFFFFF;
   --black: #000000;
-  --bg1: #e9f0f3;
-  --bg2: #d5e0ec;
+  --bg1: #A9C3DE;
+  --bg2: #D5E0EC;
 }
 .dark-theme{
   --primary-color: #201E43;
@@ -68,6 +68,7 @@ body {
   }
 }
 
+
 ul li{
   list-style-type: none;
 }
@@ -78,6 +79,19 @@ ul{
 
 a:hover, a:focus{
   text-decoration: none;
+}
+
+/* Apply zoom effect to links, buttons, and images */
+a:hover,
+.btn:hover,
+.icon:hover{
+  transform: scale(1.05); /* Scale up by 5% */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Ensure the transition applies on all interactive items */
+a, .btn, .icon, .project-img, input, textarea {
+  transition: transform 0.3s ease; /* Initial transition setup */
 }
 
 @font-face {
@@ -504,4 +518,17 @@ html,body {
 
 .email-icon {
   height: 2.5rem;
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+.icon {
+  margin-top: 1.5rem;
+  cursor: pointer;
+  height: 3rem;
 }
