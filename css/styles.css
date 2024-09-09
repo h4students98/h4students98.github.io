@@ -19,7 +19,7 @@
   src: url(../assets/fonts/Roboto-Light.ttf);
 }
 
-root{
+:root{
   --primary-color: #EEEEEE;
   --secondary-color: #7FA1C3;
   --third-color: #6482AD;
