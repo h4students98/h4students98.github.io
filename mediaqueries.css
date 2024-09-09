@@ -88,7 +88,7 @@
   }
   .section__pic-container {
     width: auto;
-    height: 46vw;
+    height: 30vw;
     justify-content: center;
   }
   .section__text__p2 {
@@ -99,5 +99,47 @@
   }
   .text-container {
     text-align: justify;
+  }
+}
+
+/* Stack containers vertically on small screens */
+@media (max-width: 768px) {
+  .about-containers,
+  .experience-details-container,
+  .details-container,
+  .text-container {
+    flex-direction: column; /* Stack the flex items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 1rem 0; /* Add some vertical spacing */
+  }
+
+  .details-container {
+    max-width: 90%; /* Reduce width to fit smaller screens */
+    margin-bottom: 1rem; /* Add space between stacked containers */
+  }
+
+  section {
+    margin: 1rem; /* Reduce overall section margin */
+  }
+
+  .section__pic-container,
+  .section__text {
+    max-width: 100%; /* Allow the image and text to take full width */
+    margin: 1rem 0; /* Add space between stacked elements */
+  }
+
+  .btn-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 0.5rem; /* Add spacing between buttons */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 1rem; /* Add space between links */
+  }
+
+  nav {
+    flex-direction: column; /* Stack nav items vertically */
+    padding: 1rem; /* Add padding for better layout */
   }
 }
