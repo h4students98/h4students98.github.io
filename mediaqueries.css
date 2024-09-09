@@ -122,13 +122,45 @@
     margin: 1rem; /* Reduce overall section margin */
   }
 
-  .section__pic-container,
-  .section__text {
-    max-width: 100%; /* Allow the image and text to take full width */
-    margin: 1rem 0; /* Add space between stacked elements */
-  }
+#profile {
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  min-height: 100vh; /* Ensures the section occupies the full viewport height */
+}
+
+.section__pic-container img {
+  max-width: 100%; /* Ensures the image scales properly */
+  height: auto; /* Maintains the image's aspect ratio */
+  object-fit: cover; /* Ensures the image fits well inside the container */
+}
+
+.section__text {
+  margin: 3rem;
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--fifth-color);
+}
 
   .btn-container {
+    align-items: center; /* Centers content vertically */
     flex-direction: column; /* Stack buttons vertically */
     gap: 0.5rem; /* Add spacing between buttons */
   }
