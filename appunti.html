@@ -208,6 +208,17 @@
   var mixer = mixitup(".portfolio");
 </script>
 
+    <script>
+      // Ensure the dark theme is applied by default on page load
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('dark-theme');
+        // Update the icon to reflect the current theme
+        darkthemeIconDesktop.src = "./assets/sun-icon.svg";
+        darkthemeIconHamburger.src = "./assets/sun-icon.svg";
+      });
+    </script>
+    
+
 <script>
   // Function to toggle theme and icon
   function toggleTheme(icon) {
