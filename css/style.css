@@ -1,0 +1,600 @@
+/* GENERAL */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Apply zoom effect to links, buttons, and images */
+a:hover,
+.btn:hover,
+.icon:hover,
+.project-img:hover{
+  transform: scale(1.05); /* Scale up by 5% */
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+/* Ensure the transition applies on all interactive items */
+a, .btn, .icon, .project-img, .details-container, input, textarea {
+  transition: transform 0.3s ease; /* Initial transition setup */
+}
+
+:root{
+  --primary-color: #EEEEEE;
+  --secondary-color: #7FA1C3;
+  --third-color: #6482AD;
+  --fourth-color: #134B70;
+  --fifth-color: #201E43;
+  --white: #FFFFFF;
+  --black: #000000;
+  --bg1: #A9C3DE;
+  --bg2: #D5E0EC;
+  --bg1r: 233; /* Red component */
+  --bg1g: 240; /* Green component */
+  --bg1b: 243; /* Blue component */
+}
+.dark-theme{
+  --primary-color: #201E43;
+  --secondary-color: #134B70;
+  --third-color: #6482AD;
+  --fourth-color: #7FA1C3;
+  --fifth-color: #EEEEEE;
+  --white: #000000;
+  --black: #FFFFFF;
+  --bg1: #201E43;
+  --bg2: #293E52;
+  --bg1r: 32; /* Red component */
+  --bg1g: 30; /* Green component */
+  --bg1b: 67; /* Blue component */
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+    --s: 102px; /* control the size*/
+  --c1: var(--bg1);
+  --c2: var(--white);
+  --c3: var(--bg2);
+  
+  --_g: var(--c3) 0 120deg,#0000 0;
+  background:
+    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                          var(--c1) 0 calc(500%/6),var(--c2) 0);
+  background-size: calc(1.732*var(--s)) var(--s);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: var(--fourth-color);
+}
+
+/* TRANSITION */
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+/* DESKTOP NAV */
+
+nav,
+.nav-links {
+  display: flex;
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh;
+}
+
+.nav-links {
+  gap: 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+a {
+  color: var(--fourth-color);
+  text-decoration: none;
+  text-decoration-color: white;
+}
+
+a:hover {
+  color: var(--third-color)
+}
+
+.logo {
+  font-size: 2rem;
+  color: var(--fifth-color);
+}
+
+.logo:hover {
+  cursor: default;
+}
+
+#darktheme-icon{
+  width: 30px;
+  cursor: pointer;
+}
+
+#darktheme2-icon{
+  width: 30px;
+  cursor: pointer;
+}
+
+/* HAMBURGER MENU */
+
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position: relative;
+  display: inline-block;
+  z-index: 3;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+
+.hamburger-icon span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--fifth-color);
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: var(--fifth-color);
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+  border-radius: 2rem;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* SECTIONS */
+
+section {
+  padding-top: 4vh;
+  height: 110vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+}
+
+.section-container {
+  display: flex;
+}
+
+/* PROFILE SECTION */
+
+#profile {
+  position: relative; /* Allows positioning of pseudo-elements */
+  overflow: hidden; /* Keeps the background within the section bounds */
+  display: flex; /* Enables flexbox for centering content */
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  min-height: 100vh; /* Ensures the section occupies the full viewport height */
+}
+
+/*
+#profile::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./assets/Image-transformed.jpeg");
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  z-index: -2; 
+}
+*/
+
+#profile::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Creates a gradient that fades vertically */
+  background: linear-gradient(
+    to bottom,
+    rgba(var(--bg1r), var(--bg1g), var(--bg1b), 0.9) 0%,
+    rgba(var(--bg1r), var(--bg1g), var(--bg1b), 0.7) 50%,
+    rgba(var(--bg1r), var(--bg1g), var(--bg1b), 0) 100%
+  );
+  z-index: -1; /* Sets the gradient above the background image but below the content */
+}
+
+.section__pic-container {
+  position: relative; /* Keeps the image on top of the gradient */
+  display: flex; /* Centers the image within the container */
+  align-items: center; /* Vertically centers the image */
+  justify-content: center; /* Horizontally centers the image */
+  max-width: 40%; /* Prevents overflow */
+  z-index: 1; /* Ensures the content is above the gradient */
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+
+.section__pic-container img {
+  max-width: 100%; /* Ensures the image scales properly */
+  height: auto; /* Maintains the image's aspect ratio */
+  object-fit: cover; /* Ensures the image fits well inside the container */
+}
+
+.section__text {
+  margin: 3rem;
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--fifth-color);
+}
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  gap: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS */
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  font-weight: 600;
+  transition: all 300ms ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+}
+
+.btn-color-1,
+.btn-color-2 {
+  border: rgb(53, 53, 53) 0.1rem solid;
+}
+
+.btn-color-1:hover,
+.btn-color-2:hover {
+  cursor: pointer;
+}
+
+.btn-color-1,
+.btn-color-2:hover {
+  background: rgb(53, 53, 53);
+  color: white;
+}
+
+.btn-color-1:hover {
+  background: var(--light-primary-color);
+}
+
+.btn-color-2 {
+  background: none;
+}
+
+.btn-color-2:hover {
+  border: rgb(255, 255, 255) 0.1rem solid;
+}
+
+.btn-container {
+  gap: 1rem;
+}
+
+/* ABOUT SECTION */
+
+#about {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.about-containers {
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
+
+.about-pic {
+  border-radius: 2rem;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: var(--secondary-color);
+  border-radius: 2rem;
+  border: 0.1rem solid;
+  border-color: var(--fifth-color);
+  text-align: center;
+}
+
+.about-sub-title {
+  color: var(--fifth-color);
+}
+
+/* EXPERIENCE SECTION */
+
+#experience {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.experience-sub-title {
+  margin-top: 1rem;
+  color: var(--fifth-color);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.experience-details-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/* PROJECTS SECTION */
+
+#projects {
+  margin-top: 1rem;
+  position: relative;
+}
+
+.color-container {
+  background: var(--secondary-color);
+  border-color: var(--fifth-color);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: var(--fifth-color);
+}
+
+/* CONTACT */
+
+#contact {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+/* Container for the entire form section */
+.contact-info-upper-container {
+  display: grid; /* Use grid layout */
+  grid-template-columns: 1fr 1fr; /* Two columns of equal width */
+  grid-template-rows: auto auto auto; /* Three rows, automatic height */
+  gap: 0.5rem; /* Spacing between grid items */
+  border-radius: 2rem;
+  border: 0.1rem solid;
+  background: var(--secondary-color);
+  border-color: var(--fifth-color);
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 600px; /* Set a max width for better layout control */
+}
+
+/* Adjust input container to span both columns in the first row */
+.contact-info-container:nth-child(1) {
+  grid-column: span 2; /* Span across two columns */
+  display: flex; /* Keep the inputs inline */
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+/* Style the textarea to take up the full width of the second row */
+.contact-info-container:nth-child(2) {
+  grid-column: span 2; /* Span across both columns */
+}
+
+/* Style the button to be centered in the third row */
+.contact-info-container:nth-child(3) {
+  grid-column: span 2; /* Span across both columns */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General styles for form elements */
+.contact-info-container input,
+.contact-info-container textarea {
+  width: 100%; /* Ensure inputs and textarea fill the available space */
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Prevent padding from affecting the width */
+}
+
+.contact-info-container button {
+  padding: 10px 10px 10px 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 300ms ease;
+  width: 10rem;
+  border-radius: 2rem;
+  background: var(--fifth-color);
+  color: var(--primary-color);
+  border: var(--fifth-color) 0.1rem solid;
+}
+
+.contact-info-container button:hover {
+  background: var(--primary-color);
+  color: var(--fifth-color);
+  border: var(--fifth-color) 0.1rem solid;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+.icon-nolink {
+  cursor: default;
+  height: 2.5rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
+}

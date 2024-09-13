@@ -1,0 +1,178 @@
+@media screen and (max-width: 1400px) {
+  #profile {
+    height: 83vh;
+    margin-bottom: 6rem;
+  }
+  .about-containers {
+    flex-wrap: wrap;
+  }
+  #contact,
+  #projects {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
+  }
+  #experience,
+  .experience-details-container {
+    margin-top: 2rem;
+  }
+  #profile,
+  .section-container {
+    display: block;
+  }
+  .arrow {
+    display: none;
+  }
+  section,
+  .section-container {
+    height: fit-content;
+  }
+  section {
+    margin: 0 5%;
+  }
+  .section__pic-container {
+    width: 275px;
+    height: 275px;
+    margin: 0 auto 2rem;
+  }
+  .about-containers {
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact,
+  footer {
+    margin-top: 4rem;
+    height: 40vh;
+  }
+  #profile {
+    height: 83vh;
+    margin-bottom: 0;
+  }
+  article {
+    font-size: 1rem;
+  }
+  footer nav {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+  .about-containers,
+  .contact-info-upper-container,
+  .btn-container {
+    flex-wrap: wrap;
+  }
+  .contact-info-container {
+    margin: 0;
+  }
+  .contact-info-container p,
+  .nav-links li a {
+    font-size: 1rem;
+  }
+  .experience-sub-title {
+    font-size: 1.25rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .section__pic-container {
+    width: auto;
+    height: 30vw;
+    justify-content: center;
+  }
+  .section__text__p2 {
+    font-size: 1.25rem;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .text-container {
+    text-align: justify;
+  }
+}
+
+/* Stack containers vertically on small screens */
+@media (max-width: 768px) {
+  .about-containers,
+  .experience-details-container,
+  .details-container,
+  .text-container {
+    flex-direction: column; /* Stack the flex items vertically */
+    align-items: center; /* Center items horizontally */
+    margin: 1rem 0; /* Add some vertical spacing */
+  }
+
+  .details-container {
+    max-width: 90%; /* Reduce width to fit smaller screens */
+    margin-bottom: 1rem; /* Add space between stacked containers */
+  }
+
+  section {
+    margin: 1rem; /* Reduce overall section margin */
+  }
+
+#profile {
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  min-height: 100vh; /* Ensures the section occupies the full viewport height */
+}
+
+.section__pic-container img {
+  max-width: 100%; /* Ensures the image scales properly */
+  height: auto; /* Maintains the image's aspect ratio */
+  object-fit: cover; /* Ensures the image fits well inside the container */
+}
+
+.section__text {
+  margin: 3rem;
+  align-self: center;
+  text-align: center;
+}
+
+.section__text p {
+  font-weight: 600;
+}
+
+.section__text__p1 {
+  text-align: center;
+}
+
+.section__text__p2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--fifth-color);
+}
+
+  .btn-container {
+    align-items: center; /* Centers content vertically */
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 0.5rem; /* Add spacing between buttons */
+  }
+
+  .nav-links {
+    flex-direction: column; /* Stack navigation links vertically */
+    gap: 1rem; /* Add space between links */
+  }
+
+  nav {
+    flex-direction: column; /* Stack nav items vertically */
+    padding: 1rem; /* Add padding for better layout */
+  }
+}
