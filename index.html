@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>h4students - Fisica con William</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
   </head>
   <body>
     <nav id="desktop-nav">
@@ -109,12 +109,10 @@
                 alt="Education icon"
                 class="icon-nolink"
               />
-              <h3 class="about-sub-title">Sono stato</h3>
-              <p>Prof. di Matematica
-                <!--, <a href="https://www.istitutocalvino.edu.it/indirizzo-di-studio/istituto-tecnico-agrario-itag/">ITAG "Italo Calvino"</a> -->
+              <h3 class="about-sub-title">Esperienze educative</h3>
+              <p>Prof. di Matematica, <a href="https://www.istitutocalvino.edu.it/indirizzo-di-studio/istituto-tecnico-agrario-itag/">ITAG "Italo Calvino"</a>
                 <br/>
-              Prof. di Fisica 
-                <!-- <a href="https://www.liceoadelaidecairoli.edu.it/">LSU "Adelaide Cairoli"</a></p> -->
+              Prof. di Fisica <a href="https://www.liceoadelaidecairoli.edu.it/">LSU "Adelaide Cairoli"</a></p>
             </div>
           </div>
           <div class="text-container">
@@ -327,35 +325,7 @@
       </nav>
     </footer>
     <script src="script.js"></script>
-
-    <script>
-      // Ensure the dark theme is applied by default on page load
-      document.addEventListener('DOMContentLoaded', () => {
-        document.body.classList.add('dark-theme');
-        // Update the icon to reflect the current theme
-        darkthemeIconDesktop.src = "./assets/sun-icon.svg";
-        darkthemeIconHamburger.src = "./assets/sun-icon.svg";
-      });
-    </script>
-
-<script>
-  // Function to toggle theme and icon
-  function toggleTheme(icon) {
-    document.body.classList.toggle("dark-theme");
-    if (document.body.classList.contains("dark-theme")) {
-      icon.src = "./assets/sun-icon.svg";
-    } else {
-      icon.src = "./assets/moon-icon.svg";
-    }
-  }
-
-  // Add event listeners for both icons
-  const darkthemeIconDesktop = document.getElementById("darktheme-icon");
-  const darkthemeIconHamburger = document.getElementById("darktheme2-icon");
-
-  darkthemeIconDesktop.addEventListener('click', () => toggleTheme(darkthemeIconDesktop));
-  darkthemeIconHamburger.addEventListener('click', () => toggleTheme(darkthemeIconHamburger));
-</script>
+    <script src="./js/darktheme.js"></script>
 
   </body>
 </html>
