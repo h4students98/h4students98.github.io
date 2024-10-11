@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ottica Geometrica - Riflessione e Rifrazione</title>
+    <link rel="stylesheet" href="../css/style-simulations.css" />
+    <link rel="stylesheet" href="../css/specific-pages/ottica-geometrica.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+    <link rel="stylesheet" href="../assets/fonts/flat-icon/flaticon.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <!-- MathJax Script -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header class="header header--bg">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-header">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              <div class="navbar-brand">Ottica Geometrica</div>
+            </div>
+            <div class="navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="../appunti.html">Appunti</a></li>
+              </ul>   
+            <img src="./assets/sun-icon.svg" id="darktheme-icon">
+            </div>
+          </nav>
+      </div>
+      </div>
+    </header>
+    <section class="portfolio" id="appunti">
+            <div class="container">
+                <div class="page-section">
+                    <h2 class="page-section__title">Simulazione di Ottica Geometrica</h2>
+                    <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+        <div class="inputs">
+            <div class="page-section__paragraph">
+            <label class="page-section__paragraph" for="n1">Indice di Rifrazione materiale 1 (n₁):</label>
+            <input class="page-section__paragraph" type="number" id="n1Manual" min="1" max="2.5" step="0.01" value="1.00" onchange="updateSlider('n1', this.value); simulate()">
+            <input type="range" id="n1" min="1" max="2.5" step="0.01" value="1.00" oninput="simulate()"><br>
+           
+
+            <label class="page-section__paragraph" for="n2">Indice di Rifrazione materiale 2 (n₂):</label>
+            <input class="page-section__paragraph" type="number" id="n2Manual" min="1" max="2.5" step="0.01" value="1.50" onchange="updateSlider('n2', this.value); simulate()">
+            <input type="range" id="n2" min="1" max="2.5" step="0.01" value="1.50" oninput="simulate()"><br>
+            
+
+            <label class="page-section__paragraph" for="angle">Angolo di Incidenza (in gradi):</label>
+            <input class="page-section__paragraph" type="number" id="angleManual" min="0" max="90" step="0.1" value="30.0" onchange="updateSlider('angle', this.value); simulate()">
+            <input type="range" id="angle" min="0" max="90" step="0.1" value="30.0" oninput="simulate()"><br>
+
+            <label>
+                <input type="checkbox" id="showRefracted" checked onchange="simulate()"> Mostra Raggio Rifratto
+            </label>
+            <label>
+                <input type="checkbox" id="showReflected" checked onchange="simulate()"> Mostra Raggio Riflesso
+            </label><br>
+            <label>
+                <input type="checkbox" id="showInfo" checked onchange="simulate()"> Mostra i dati in figura
+            </label>
+        </div>
+        </div>
+        </div>
+    </div>
+        <section class="canva-container">
+        <canvas id="canvas" width="600" height="600"></canvas>
+        </section>
+
+<div class="page-section">
+        <!-- Problem Solver Section -->
+        <h3 class="page-section__title">Problemi sulla Legge di Snell</h3>
+        <div class="page-section__paragraph">
+            <p>Un raggio incide con angolo θ₁ = <input type="number" id="solverAngle1" step="0.1" placeholder="Enter θ₁"> gradi su una superficie e il fascio viene rifratto ad un angolo θ₂ = <input type="number" id="solverAngle2" step="0.1" placeholder="Enter θ₂"> gradi.</p>
+            <p>Il primo materiale ha indice di rifrazione n₁ = <input type="number" id="solverN1" step="0.01" placeholder="Enter n₁"> il secondo materiale ha indice di rifrazione n₂ = <input type="number" id="solverN2" step="0.01" placeholder="Enter n₂">.</p>
+            <button class="btn-canva" onclick="solveSnellProblem()">Risolvi</button>
+            <button class="btn-canva" onclick="showOnCanvas()">Mostra in Figura</button>
+            <p id="solverOutput" style="color:red;"></p>
+        </div>
+
+        <!-- Problem Solver Section -->
+        <h3 class="page-section__title">Problema sull'indice di rifrazione</h3>
+            <div class="page-section__paragraph">
+            <p>Un raggio si muove in un materiale con indice di rifrazione n₁ = <input type="number" id="refrIndex" step="0.01" placeholder="Enter n₁">. </p>
+            <p>La velocità della luce nel materiale è v = <input type="number" id="velOfRay" step="0.01" placeholder="Enter v"> m/s.</p>
+            <button class="btn-canva" onclick="solveVelocityProblem()">Risolvi</button>
+            <p id="velocitySolverOutput" style="color:red;"></p>
+        </div>
+</div>
+    </div>
+    <script src="optik_script.js"></script>
+    <script src="../script.js"></script>
+    <script src="../js/darktheme-simulations.js"></script>
+</body>
+</html>
