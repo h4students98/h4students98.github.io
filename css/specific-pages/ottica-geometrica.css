@@ -1,0 +1,18 @@
+@import "../style-appunti.css";
+
+input[type="number"] {
+    border: none;
+    background-color: var(--white); /* Use the primary color */
+    background-opacity: 0.1; /* Set the opacity */
+    font-size: 1em;
+    width: 4em; /* Adjust width based on content */
+    text-align: center; /* Center the number for better appearance */
+    appearance: none; /* Remove the default browser styling */
+    -moz-appearance: textfield; /* For Firefox to remove the spinner */
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none; /* Remove the spin buttons for WebKit browsers */
+    margin: 0;
+}
