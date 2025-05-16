@@ -1,0 +1,145 @@
+{
+  "it": {
+    "common": {
+      "nav_home": "Home",
+      "nav_projects": "Progetti",
+      "nav_resources": "Risorse per studenti",
+      "nav_personal": "Personale",
+      "download": "Scarica",
+      "open": "Apri",
+      "contacts_title": "Contatti",
+      "cv_title": "Curriculum Vitae",
+      "credits": "© 2025 William Colombini. Tutti i contenuti sono protetti dalla legge sul diritto d'autore.",
+      "license": "Licenza CC BY-NC-ND 4.0"
+    },
+    "homepage": {
+      "page_title": "Il mio sito personale",
+      "welcome_title": "Benvenuto nel mio sito personale",
+      "projects_section_title": "Progetti seri",
+      "projects_description": "In questa sezione trovi le presentazioni, il codice e altri progetti.",
+      "resources_section_title": "Materiali per studenti",
+      "resources_description": "Attualmente le dispense per studenti e le simulazioni si trovano nella precedente versione del sito.",
+      "personal_section_title": "Spazio personale",
+      "personal_description": "I miei canali social, video, Twitch e contenuti vari."
+    },
+    "projects": {
+      "projects_title": "I miei progetti",
+      "university_projects": "Progetti universitari",
+      "view_presentation": "Scarica presentazione",
+      "view_pdf": "Scarica PDF",
+      "old_site_view": "Accedi alla precedente versione del sito",
+      "thesis_section": "Lavori di Tesi",
+      "exams_section": "Progetti d'esame",
+      "other_section": "Altri Progetti",
+
+      "tdad_title": "Simulazione CCD con Arduino",
+      "tdad_desc": "Simulazione dell’acquisizione dati da spettrometro Raman con Arduino, C++ e Bash.",
+
+      "thesis_bachelor_title": "Tesi triennale - Analisi Raman",
+      "thesis_bachelor_desc": "Analisi spettroscopica degli inchiostri nei disegni di Lucio Fontana.",
+
+      "energy_title": "Energia solare e fotovoltaico",
+      "energy_desc": "Approfondimento sullo stato della ricerca e degli impianti fotovoltaici.",
+
+      "ml_title": "Classificazione radar con ML",
+      "ml_desc": "Applicazione di tecniche di analisi dati e di machine learning per la classificazione di segnali radar ionosferici con reti neurali e machine learning.",
+
+      "thesis_master_title": "Tesi magistrale - Phasor Hyperspectral",
+      "thesis_master_desc": "Analisi con fasori su immagini iperspettrali per identificare malattie nelle piante.",
+
+      "old_site_title": "Il mio vecchio sito personale",
+      "old_site_desc": "Altri progetti relativi alla didattica o più personali sono presenti nel vecchio sito, meno professionale."
+    },
+    "resources": {
+      "title": "Materiali didattici",
+      "resource1_title": "Risorse per studenti",
+      "resource2_title": "Simulazioni per studenti",
+      "resource1_desc": "Attualmente non disponibili in questa versione. Puoi però trovarle nella",
+      "resources_old_site": "Vecchia versione del sito"
+    },
+    "personal": {
+      "page_title": "Personale | Will",
+      "title": "Chi sono",
+      "bio_title_ed": "Percorso di Studi",
+      "bio_title_now": "Attualmente",
+      "bio_title_myself": "In generale",
+      "bio_text": "Sono un docente di matematica e fisica, appassionato di programmazione, fotografia e divulgazione scientifica.",
+      "bio_text": "I’m a high school teacher in math and physics, passionate about programming, photography, and science outreach.",
+      "bio_education" : "Sono laureato magistrale in Fisica della Materia presso l’Università degli Studi di Milano-Bicocca. Nel corso del mio percorso accademico ho approfondito gli aspetti applicativi della fisica, con un’attenzione multidisciplinare che ha spaziato dall’arte all'ambito energetico. Una parte significativa del mio curriculum ha riguardato l’impiego di tecniche di analisi dati, machine learning e simulazione.",
+      "bio_now" : "Insegno Matematica e Fisica presso il Liceo Ginnasio Statale B. Cairoli di Vigevano. L'esperienza mi permette di coltivare competenze trasversali di comunicazione e teamwork, oltre che organizzazione.",
+      "bio_myself" : "Sono motivato dall’apprendimento continuo e interessato ai settori EdTech, energia e gestione dati, con disponibilità a trasferte nazionali e internazionali."
+
+    }
+  },
+  "en": {
+    "common": {
+      "nav_home": "Homepage",
+      "nav_projects": "Projects",
+      "nav_resources": "Student Resources",
+      "nav_personal": "Personal",
+      "download": "Download",
+      "open": "Open",
+      "contacts_title": "Contacts",
+      "cv_title": "Curriculum Vitae",
+      "credits": "© 2025 William Colombini.  All documents and content on this site are protected by intellectual property law.",
+      "license": "Licensed under CC BY-NC-ND 4.0"
+    },
+    "homepage": {
+      "page_title": "My Personal Website",
+      "welcome_title": "Welcome to my personal website",
+      "projects_section_title": "Serious Projects",
+      "projects_description": "In this section you'll find presentations, code, and other work.",
+      "resources_section_title": "Materials for Students",
+      "resources_description": "Currently, the student handouts and simulations are available on the previous version of the website.",
+      "personal_section_title": "Personal Space",
+      "personal_description": "My social channels, videos, Twitch and other content."
+    },
+    "projects": {
+      "projects_title": "My Projects",
+      "university_projects": "University Projects",
+      "view_presentation": "Download presentation",
+      "view_pdf": "Download PDF",
+      "old_site_view": "Go to the previous version of the website",
+      "thesis_section": "Thesis projects",
+      "exams_section": "Exams projects",
+      "other_section": "Other Projects",
+
+      "tdad_title": "CCD Simulation with Arduino",
+      "tdad_desc": "Data acquisition from Raman spectrometer simulated with Arduino, C++ and Bash.",
+
+      "thesis_bachelor_title": "Bachelor Thesis - Raman Analysis",
+      "thesis_bachelor_desc": "Spectroscopic study of ink on drawings by Lucio Fontana using Raman technique.",
+
+      "energy_title": "Solar and Photovoltaic Energy",
+      "energy_desc": "Study of photovoltaic energy, current status, challenges and research trends.",
+
+      "ml_title": "Radar Classification with ML",
+      "ml_desc": "Data analysis and machine learning techniques applied to the classification of ionospheric radar signals via neural networks.",
+
+      "thesis_master_title": "Master Thesis - Hyperspectral Phasors",
+      "thesis_master_desc": "Phasor-based analysis of hyperspectral images for plant disease detection.",
+
+      "old_site_title": "My old website",
+      "old_site_desc": "Additional projects, including those related to teaching or of a more personal nature, can be found on my older and less formal website."
+
+    },
+    "resources": {
+      "title": "Teaching Materials",
+      "resource1_title": "Resources for Students",
+      "resource2_title": "Simulations for Students",
+      "resource1_desc": "Currently not available in this version. However, you can find them on the",
+      "resources_old_site": "Old version of the website"
+    },
+    "personal": {
+      "page_title": "Personal | Will",
+      "title": "About Me",
+      "bio_title_ed": "Education",
+      "bio_title_now": "Current Position",
+      "bio_title_myself": "A brief description",
+      "bio_text": "I’m a high school teacher in math and physics, passionate about programming, photography, and science outreach.",
+      "bio_education" : "I hold a Master's degree in Condensed Matter Physics from the University of Milano-Bicocca. Throughout my academic journey, I have deepened my understanding of applied physics, with a multidisciplinary focus spanning from art to energy. A significant portion of my curriculum involved the application of advanced data analysis techniques, machine learning, and simulation.",
+      "bio_now": "I currently teach Mathematics and Physics at the Liceo Ginnasio Statale B. Cairoli in Vigevano. This experience allows me to develop transversal skills such as communication, teamwork, and organization.",
+      "bio_myself" : "I am motivated by continuous learning and have a keen interest in the EdTech, energy, and data management sectors, with availability for both national and international business trips."
+    }
+  }
+}
