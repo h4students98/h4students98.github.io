@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>h4students - Fisica con William</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">William</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">Presentazione</a></li>
+          <li><a href="#notes">Appunti</a></li>
+          <li><a href="#projects">Progetti</a></li>
+          <li><a href="#contact">Contatti</a></li>
+          <li><img class="icon" src="./assets/moon-icon.svg" id="darktheme-icon"></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">William</div>
+      <img class="icon" src="./assets/moon-icon.svg" id="darktheme2-icon">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">Presentazione</a></li>
+          <li><a href="#notes" onclick="toggleMenu()">Appunti</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Progetti</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contatti</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+          <img src="./assets/willy-profile-pic-big.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Ciao, io mi chiamo</p>
+        <h1 class="title">William</h1>
+        <p class="section__text__p2">Benvenuti nella mia classe</p>
+      <!--
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+      -->
+        <div id="socials-container">
+          <img
+            src="./assets/youtube-icon.svg"
+            alt="My Youtube profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+          <img
+            src="./assets/twitch-icon.svg"
+            alt="My Twitch profile"
+            class="icon"
+            onclick="location.href='https://www.twitch.tv/wills_wandering_corner?sr=a'"
+          />
+          <img
+            src="./assets/instagram-icon.svg"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+          <img
+            src="./assets/mail-icon.svg"
+            alt="My Mail profile"
+            class="icon"
+            onclick="location.href='mailto:h4students98@gmail.com'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Fammi raccontare</p>
+      <h1 class="title">Qualcosa su di me</h1>
+
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/graduate-icon.svg"
+                alt="Experience icon"
+                class="icon-nolink"
+              />
+              <h3 class="about-sub-title">Percorso di Studi</h3>
+              <p>LT in Fisica, <a href="https://fisica.dip.unipv.it/it">UNIPV</a>
+                <br />
+              LM in Fisica della Materia, <a href="https://www.fisica.unimib.it/it">UNIMIB</a></p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon-nolink"
+              />
+              <h3 class="about-sub-title">Esperienze educative</h3>
+              <p>Prof. di Matematica, <a href="https://www.istitutocalvino.edu.it/indirizzo-di-studio/istituto-tecnico-agrario-itag/">ITAG "Italo Calvino"</a>
+                <br/>
+              Prof. di Fisica <a href="https://www.liceoadelaidecairoli.edu.it/">LSU "Adelaide Cairoli"</a></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              In sostanza mi considero un aspirante insegnante con un'insaziabile passione per la fisica e la programmazione. Questo sito vuole essere uno spazio dove faccio confluire le tre cose. Sentitevi liberi di esplorare, scaricare ciò che vi interessa e <a href='#contact'>contattarmi per qualsiasi dubbio o suggerimento</a>.
+            </p>
+          </div>
+        <!--
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    -->
+    </section>
+    <section id="notes">
+      <p class="section__text__p1">Esplora un po'</p>
+      <h1 class="title">I miei appunti e lavori</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+              <div class="article-container">
+              <img
+                  src="./assets/Progetti_universitari.jpg"
+                  alt="Appunti 1"
+                  class="project-img"
+                />
+            </div>
+            <h2 class="experience-sub-title">Progetti Universitari</h2>
+            <div class="text-container">
+              <p>
+                Qui troverai i miei lavori universitari e le mie tesi. 
+                Esplora, scarica, leggi quello che vuoi.
+              </p>
+            </div>
+          </div>
+          <div class="details-container">
+            <a href="./appunti.html">
+            <div class="article-container">
+                 <img
+                    src="./assets/Appunti_per_studenti.jpg"
+                    alt="Appunti 2"
+                    class="project-img"
+                  />
+            </div>
+          </a>
+            <h2 class="experience-sub-title">Appunti per studenti</h2>
+            <div class="text-container">
+              <p>
+                Qui troverai alcuni appunti che ho scritto per i miei studenti. Esplora, scarica, leggi quello che vuoi.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Vieni a vedere i miei</p>
+      <h1 class="title">Progetti ed esperimenti</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <a href="https://www.twitch.tv/wills_wandering_corner?sr=a">
+              <div class="article-container">
+                <img
+                  src="./assets/twitch-project-with-name.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+            </a>
+            <h2 class="experience-sub-title">Il canale Twitch</h2>
+            <div class="text-container">
+              <p>
+                Qui è dove studio, svolgo i miei progetti in compagnia</a>.
+              </p>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/logo-corretto.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title">Il canale Youtube</h2>
+            <!--
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          -->
+            <div class="text-container">
+              <p>
+                Presto in arrivo</a>.
+              </p>
+            </div>
+          </div>
+          <!--
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    -->
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Se vuoi contattarmi puoi tranquillamente</p>
+      <h1 class="title">Scrivere un messaggio</h1>
+      <form action="https://formspree.io/f/mdknjnoz" method="POST">
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/user-name-icon.svg"
+              alt="User icon"
+              class="icon-nolink"
+            />
+            <input type="text" id="name" name="Name" placeholder="Come ti chiami ?" required />
+            <img
+              src="./assets/email.png"
+              alt="Email icon"
+              class="icon-nolink"
+            />
+            <input type="email" id="email" name="Email" placeholder="Qual è la tua mail ?" required />
+          </div>
+          <div class="contact-info-container">
+            <textarea
+              id="message"
+              name="Message"
+              rows="4"
+              placeholder="Cosa ti va di scrivermi ?"
+              required
+            ></textarea>
+          </div>
+          <div class="contact-info-container">
+            <button type="submit">Invia il messaggio</button>
+          </div>
+        </div>
+      </form>
+    </section>
+    <footer>
+      <div id="socials-container">
+          <img
+            src="./assets/youtube-icon.svg"
+            alt="My Youtube profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+          <img
+            src="./assets/twitch-icon.svg"
+            alt="My Twitch profile"
+            class="icon"
+            onclick="location.href='https://www.twitch.tv/wills_wandering_corner?sr=a'"
+          />
+          <img
+            src="./assets/instagram-icon.svg"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='#'"
+          />
+          <img
+            src="./assets/mail-icon.svg"
+            alt="My Mail profile"
+            class="icon"
+            onclick="location.href='mailto:h4students98@gmail.com'"
+          />
+        </div>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">Presentazione</a></li>
+            <li><a href="#notes">Appunti</a></li>
+            <li><a href="#projects">Progetti</a></li>
+            <li><a href="#contact">Contatti</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+    <script src="./js/darktheme.js"></script>
+
+  </body>
+</html>
