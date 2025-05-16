@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+
+  <!-- SEO Base -->
+  <meta name="description" content="Il sito personale di Will: progetti, risorse didattiche per studenti e contenuti personali.">
+  <meta name="keywords" content="Will, fisica, matematica, scuola, risorse didattiche, simulazioni, presentazioni, coding">
+  <meta name="author" content="Will">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Social Media Preview (Open Graph per Facebook, LinkedIn, ecc.) -->
+  <meta property="og:title" content="Il sito personale di Will">
+  <meta property="og:description" content="Scopri progetti, risorse didattiche e contenuti personali.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tua-url.github.io/"> <!-- sostituisci con la tua URL effettiva -->
+  <meta property="og:image" content="https://tua-url.github.io/img/anteprima.png"> <!-- sostituisci se hai un'immagine -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="resources_page_title">Risorse | Will</title>
+  
+  <!-- Font Awesome per le icone -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="icon" href="img/favicon_site.png" type="image/png" />
+</head>
+<body>
+
+<!-- Sidebar dinamica (NAVBAR) -->
+<header>
+  <!-- Pulsante hamburger -->
+  <button id="menu-toggle" aria-label="Apri menu">&#9776;</button>
+
+  <!-- Pulsanti lingua -->
+  <div class="language-switcher">
+    <button class="lang-switch" data-lang="it">🇮🇹</button>
+    <button class="lang-switch" data-lang="en">🇬🇧</button>
+  </div>
+
+  <!-- Sidebar -->
+  <nav id="sidebar">
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> <span data-i18n="common_nav_home">Home</span></a></li>
+      <li><a href="projects.html"><i class="fas fa-folder-open"></i> <span data-i18n="common_nav_projects">Progetti</span></a></li>
+      <li><a href="resources.html"><i class="fas fa-graduation-cap"></i> <span data-i18n="common_nav_resources">Risorse</span></a></li>
+      <li><a href="personal.html"><i class="fas fa-user"></i> <span data-i18n="common_nav_personal">Personale</span></a></li>
+    </ul>
+  </nav>
+</header>
+
+  <main>
+    <h1 data-i18n="resources_title">Materiali didattici</h1>
+    
+    <section class="resource">
+      <h2 data-i18n="resources_resource1_title">Risorse per studenti</h2>
+      <p data-i18n="resources_resource1_desc">
+        Attualmente non disponibili in questa versione. Puoi però trovarle nella
+      </p>
+      <a href="old_website/appunti.html" data-i18n="resources_old_site">Vecchia versione del sito</a>
+    </section>
+
+    <section class="resource">
+      <h2 data-i18n="resources_resource2_title">Simulazioni per studenti</h2>
+      <p data-i18n="resources_resource1_desc">
+        Attualmente non disponibili in questa versione. Puoi però trovarle nella
+      </p>
+      <a href="old_website/appunti.html#simulazioni" data-i18n="resources_old_site">Vecchia versione del sito</a>
+    </section>
+  </main>
+
+<footer>
+  <div class="contact-card">
+    <h3 data-i18n="common_contacts_title">Contatti</h3>
+    <p><strong>Email:</strong> <a href="mailto:canevari.simone01@gmail.com">colombini.william01@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/william-colombini" target="_blank">linkedin.com/in/william-colombini</a></p>
+
+    <h3 data-i18n="common_cv_title">Curriculum Vitae</h3>
+    <p><a id="cv-link" href="personal/Colombini_cv_it.pdf" target="_blank" data-i18n="footer_cv_download">Scarica il mio CV</a></p>
+
+    <p class="copyright" data-i18n="common_credits">
+      © 2025 William Colombini. Tutti i contenuti sono protetti dalla legge sul diritto d'autore.<br />
+      <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"  data-i18n="common_license"> Licenza CC BY-NC-ND 4.0 </a>
+    </p>
+  </div>
+</footer>
+
+<!-- CONTA L'ORDINE. i18n.js per primo! -->
+  <script src="js/i18n.js" defer></script>
+  <script src="js/navbar.js" defer></script>
+</body>
+</html>
