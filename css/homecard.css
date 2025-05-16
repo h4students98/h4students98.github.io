@@ -42,3 +42,26 @@
   text-align: center;
   background-color: #f7f7f7;
 }
+
+.homepage-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+}
+
+.homepage-title h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .homepage-title h1 {
+    font-size: 2rem;
+  }
+}
