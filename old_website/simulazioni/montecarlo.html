@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monte Carlo Simulation - Stima di Pi Greco</title>
+    <link rel="stylesheet" href="../css/style-simulations.css" />
+    <link rel="stylesheet" href="../mediaqueries.css" />
+    <link rel="stylesheet" href="../assets/fonts/flat-icon/flaticon.css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <!-- MathJax Script -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <header class="header header--bg">
+        <div class="container">
+          <nav class="navbar">
+            <div class="navbar-header">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> 
+              <div class="navbar-brand">Simulazioni Montecarlo</div>
+            </div>
+            <div class="navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav">
+                <li><a href="../index.html">Homepage</a></li>
+                <li><a href="../appunti.html">Appunti</a></li>
+              </ul>   
+            <img src="./assets/sun-icon.svg" id="darktheme-icon">
+            </div>
+          </nav>
+      </div>
+      </div>
+    </header>
+    <section class="portfolio" id="appunti">
+        <div class="container">
+            <div class="page-section">
+                <h2 class="page-section__title">Simulazioni Montecarlo</h2>
+                <img class="page-section__title-style" src="assets/images/title-style.png" alt="">
+                <p class="page-section__paragraph"><strong>Concetto Base:</strong> L'idea alla base del metodo Monte Carlo per stimare pi greco è sfruttare il rapporto tra l'area di un cerchio e l'area di un quadrato che lo contiene.</p>
+                <ol class="page-section__paragraph">
+                    <li><strong>Quadrato e Cerchio:</strong> Immaginiamo un cerchio di raggio 1 inscritto in un quadrato. Il lato del quadrato sarà quindi 2, poiché copre da -1 a 1 in entrambe le direzioni.</li>
+                    <li><strong>Aree del Cerchio e del Quadrato:</strong>
+                        <ul>
+                            <li>\( A_{quadrato} = lato \times lato = 2 \times 2 = 4 \).</li>
+                            <li>\( A_{cerchio} = \pi \times r^2 = \pi \times 1^2 = \pi \).</li>
+                        </ul>
+                    </li>
+                    <li><strong>Rapporto tra le Aree:</strong> Il rapporto tra l'area del cerchio e l'area del quadrato è:
+                        \[
+                        \frac{A_{cerchio}}{A_{quadrato}} = \frac{\pi}{4}.
+                        \]
+                    </li>
+                    <li><strong>Generazione dei Punti:</strong> Generiamo punti casuali all'interno del quadrato e contiamo quanti cadono dentro il cerchio usando come condizione l'equazione del cerchio \(x^2 + y^2 \leq 1\).</li>
+                    <li><strong>Stima di Pi Greco:</strong>
+                        \[
+                        \frac{N_{dentro}}{N} \approx \frac{A_{cerchio}}{A_{quadrato}} = \frac{\pi}{4}.
+                        \]
+                        Da cui ricaviamo:
+                        \[
+                        \pi \approx 4 \times \frac{N_{dentro}}{N}.
+                        \]
+                    </li>
+                </ol>
+                <p class="page-section__paragraph"><strong>Conclusione:</strong> Questo metodo dimostra come la probabilità e la geometria possano essere usate per stimare una costante importante come pi greco!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="canva-container">
+        <label class="page-section__paragraph" for="numPoints">Numero di Punti:</label>
+        <input class="number-input" type="number" id="numPoints" value="1000" min="10" max="10000000" step="1">
+        <button class="btn-canva" id="startButton">Inizia la Simulazione</button>
+        <div class="page-results-text" id="result"></div>
+        <canvas id="canvas" width="600" height="600"></canvas>
+    </section>
+
+    <script>
+        document.getElementById('startButton').addEventListener('click', () => {
+            const numPoints = parseInt(document.getElementById('numPoints').value);
+            monteCarloFindPi(numPoints);
+        });
+
+        function monteCarloFindPi(numPoints) {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            let insideCircle = 0;
+            const xDentro = [];
+            const yDentro = [];
+            const xFuori = [];
+            const yFuori = [];
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            for (let i = 0; i < numPoints; i++) {
+                const x = Math.random() * 2 - 1; // Numero casuale tra -1 e 1
+                const y = Math.random() * 2 - 1; // Numero casuale tra -1 e 1
+                if (x * x + y * y <= 1) {
+                    insideCircle++;
+                    xDentro.push(x);
+                    yDentro.push(y);
+                } else {
+                    xFuori.push(x);
+                    yFuori.push(y);
+                }
+            }
+
+            const piGrecoStimato = 4 * insideCircle / numPoints;
+            document.getElementById('result').textContent = `Valore stimato di pi greco con ${numPoints} punti: ${piGrecoStimato}`;
+
+            // Disegna i punti
+            drawPoints(ctx, xDentro, yDentro, 'blue');
+            drawPoints(ctx, xFuori, yFuori, 'red');
+        }
+
+        function drawPoints(ctx, xPoints, yPoints, color) {
+            ctx.fillStyle = color;
+            xPoints.forEach((x, index) => {
+                const y = yPoints[index];
+                ctx.beginPath();
+                ctx.arc((x + 1) * 300, (y + 1) * 300, 1, 0, Math.PI * 2);
+                ctx.fill();
+            });
+        }
+    </script>
+
+    <script src="../script.js"></script>
+    <script src="../js/darktheme-simulations.js"></script>
+</body>
+</html>
