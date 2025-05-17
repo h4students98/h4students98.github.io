@@ -13,18 +13,21 @@ function setLanguage(lang) {
 
       generatedKeys = []; // reset ad ogni cambio lingua
 
+      // ✅ MODIFICA: usa querySelectorAll per aggiornare tutti gli elementi con lo stesso data-i18n
       function applyTranslations(obj, prefix = "") {
         for (const key in obj) {
           const fullKey = prefix ? `${prefix}_${key}` : key;
           generatedKeys.push(fullKey); // salva la chiave
 
-          const el = document.querySelector(`[data-i18n="${fullKey}"]`);
           if (typeof obj[key] === "object") {
             applyTranslations(obj[key], fullKey);
           } else {
-            if (el) {
+            // ✅ PRIMA: document.querySelector(...) (solo il primo)
+            // ✅ ORA: document.querySelectorAll(...) + forEach per applicare a tutti
+            const elements = document.querySelectorAll(`[data-i18n="${fullKey}"]`);
+            elements.forEach(el => {
               el.textContent = obj[key];
-            }
+            });
           }
         }
       }
