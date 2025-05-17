@@ -9,18 +9,20 @@
       "open": "Apri",
       "contacts_title": "Contatti",
       "cv_title": "Curriculum Vitae",
+      "cv_download" : "Scarica il mio CV",
       "credits": "© 2025 William Colombini. Tutti i contenuti sono protetti dalla legge sul diritto d'autore.",
       "license": "Licenza CC BY-NC-ND 4.0"
     },
     "homepage": {
       "page_title": "Il mio sito personale",
       "welcome_title": "Benvenuto nel mio sito personale",
-      "projects_section_title": "Progetti seri",
-      "projects_description": "In questa sezione trovi le presentazioni, il codice e altri progetti.",
-      "resources_section_title": "Materiali per studenti",
-      "resources_description": "Attualmente le dispense per studenti e le simulazioni si trovano nella precedente versione del sito.",
-      "personal_section_title": "Spazio personale",
-      "personal_description": "I miei canali social, video, Twitch e contenuti vari."
+      "featured_title": "Presentazioni in Evidenza",
+      "card_energy" : "Energia & Fotovoltaico",
+      "card_LM" : "Tesi Magistrale",
+      "card_LT" : "Tesi Triannela",
+      "card_ml" : "Machine Learning & Radar",
+      "resources_title": "Materiali per studenti",
+      "resources_description": "Attualmente le dispense per studenti e le simulazioni si trovano nella precedente versione del sito."
     },
     "projects": {
       "projects_title": "I miei progetti",
@@ -81,18 +83,20 @@
       "open": "Open",
       "contacts_title": "Contacts",
       "cv_title": "Curriculum Vitae",
+      "cv_download" : "Download my CV",
       "credits": "© 2025 William Colombini.  All documents and content on this site are protected by intellectual property law.",
       "license": "Licensed under CC BY-NC-ND 4.0"
     },
     "homepage": {
       "page_title": "My Personal Website",
       "welcome_title": "Welcome to my personal website",
-      "projects_section_title": "Serious Projects",
-      "projects_description": "In this section you'll find presentations, code, and other work.",
-      "resources_section_title": "Materials for Students",
-      "resources_description": "Currently, the student handouts and simulations are available on the previous version of the website.",
-      "personal_section_title": "Personal Space",
-      "personal_description": "My social channels, videos, Twitch and other content."
+      "featured_title": "Featured Presentations",
+      "card_energy" : "Photovoltaic",
+      "card_LM" : "Master’s Thesis",
+      "card_LT" : "Bachelor’s Thesis",
+      "card_ml" : "Machine Learning & Radar",
+      "resources_title": "Materials for Students",
+      "resources_description": "Currently, the student handouts and simulations are available on the previous version of the website."
     },
     "projects": {
       "projects_title": "My Projects",
