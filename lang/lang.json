@@ -17,10 +17,10 @@
       "page_title": "Il mio sito personale",
       "welcome_title": "Benvenuto nel mio sito personale",
       "featured_title": "Presentazioni in Evidenza",
-      "card_energy" : "Energia & Fotovoltaico",
-      "card_LM" : "Tesi Magistrale",
-      "card_LT" : "Tesi Triannela",
-      "card_ml" : "Machine Learning & Radar",
+      "card_energy": "Presentazione su Energia Solare e Fotovoltaico",
+      "card_LM": "Analisi Iperspettrale e Machine Learning in Agricoltura",
+      "card_LT": "Analisi Raman degli Inchiostri di Lucio Fontana",
+      "card_ml": "Classificazione Dati Radar con Machine Learning",
       "resources_title": "Materiali per studenti",
       "resources_description": "Attualmente le dispense per studenti e le simulazioni si trovano nella precedente versione del sito."
     },
@@ -33,6 +33,13 @@
       "thesis_section": "Lavori di Tesi",
       "exams_section": "Progetti d'esame",
       "other_section": "Altri Progetti",
+      "school_section": "Presentazioni per la scuola",
+
+      "fake_news_title": "Fake News",
+      "fake_news_desc": "Una lezione di cittadinanza sulle Fake News, con un esercizio da proporre alla classe.",
+
+      "color_title" : "Teoria dei Colori",
+      "color_desc" : "Una lezione di approfondimento sulla fisica dei colori, con link a simulazioni utili.",
 
       "tdad_title": "Simulazione CCD con Arduino",
       "tdad_desc": "Simulazione dell’acquisizione dati da spettrometro Raman con Arduino, C++ e Bash.",
@@ -91,10 +98,10 @@
       "page_title": "My Personal Website",
       "welcome_title": "Welcome to my personal website",
       "featured_title": "Featured Presentations",
-      "card_energy" : "Photovoltaic",
-      "card_LM" : "Master’s Thesis",
-      "card_LT" : "Bachelor’s Thesis",
-      "card_ml" : "Machine Learning & Radar",
+      "card_energy" : "Solar and Photovoltaic Energy Presentation",
+      "card_LM" : "Hyperspectral Analysis and Machine Learning in Agriculture",
+      "card_LT" : "Raman Analisis of Lucio Fontana's Inks",
+      "card_ml" : "Radar Data Classification with Machine Learning",
       "resources_title": "Materials for Students",
       "resources_description": "Currently, the student handouts and simulations are available on the previous version of the website."
     },
@@ -107,6 +114,13 @@
       "thesis_section": "Thesis projects",
       "exams_section": "Exams projects",
       "other_section": "Other Projects",
+      "school_section": "School Presentations",
+
+      "fake_news_title": "Fake News",
+      "fake_news_desc": "A citizenship education lesson on fake news, with an activity to propose in class.",
+
+      "color_title" : "Color Theory",
+      "color_desc" : "An in-depth lesson on the physics of colors, including links to helpful simulations.",
 
       "tdad_title": "CCD Simulation with Arduino",
       "tdad_desc": "Data acquisition from Raman spectrometer simulated with Arduino, C++ and Bash.",
@@ -120,7 +134,7 @@
       "ml_title": "Radar Classification with ML",
       "ml_desc": "Data analysis and machine learning techniques applied to the classification of ionospheric radar signals via neural networks.",
 
-      "thesis_master_title": "Master Thesis - Hyperspectral Phasors",
+      "thesis_master_title": "Master Thesis - Hyperspectral Phasors Analysis",
       "thesis_master_desc": "Phasor-based analysis of hyperspectral images for plant disease detection.",
 
       "old_site_title": "My old website",
