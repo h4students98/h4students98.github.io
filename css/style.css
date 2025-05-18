@@ -5,15 +5,60 @@
   box-sizing: border-box;
 }
 
+:root{
+  --primary-color: #EEEEEE;
+  --secondary-color: #7FA1C3;
+  --third-color: #6482AD;
+  --fourth-color: #134B70;
+  --fifth-color: #201E43;
+  --white: #FFFFFF;
+  --black: #000000;
+  --bg1: #A9C3DE;
+  --bg2: #D5E0EC;
+  --bg1r: 233; /* Red component */
+  --bg1g: 240; /* Green component */
+  --bg1b: 243; /* Blue component */
+}
+.dark-theme{
+  --primary-color: #201E43;
+  --secondary-color: #134B70;
+  --third-color: #6482AD;
+  --fourth-color: #7FA1C3;
+  --fifth-color: #EEEEEE;
+  --white: #000000;
+  --black: #FFFFFF;
+  --bg1: #201E43;
+  --bg2: #293E52;
+  --bg1r: 32; /* Red component */
+  --bg1g: 30; /* Green component */
+  --bg1b: 67; /* Blue component */
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  /* background-color: #f9f9f9; */
   color: #333;
   padding: 1rem;
   max-width: 960px;
   margin: auto;
   text-align: justify;
+
+  background-color: var(--primary-color);
+    --s: 102px; /* control the size*/
+  --c1: var(--bg1);
+  --c2: var(--white);
+  --c3: var(--bg2);
+  
+  --_g: var(--c3) 0 120deg,#0000 0;
+  background:
+    conic-gradient(from -60deg at 50% calc(100%/3),var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200%/3),var(--_g)),
+    conic-gradient(from  60deg at calc(200%/3),var(--c3) 60deg,var(--c2) 0 120deg,#0000 0),
+    conic-gradient(from 180deg at calc(100%/3),var(--c1) 60deg,var(--_g)),
+    linear-gradient(90deg,var(--c1)   calc(100%/6),var(--c2) 0 50%,
+                          var(--c1) 0 calc(500%/6),var(--c2) 0);
+  background-size: calc(1.732*var(--s)) var(--s);
 }
 
 main section {
