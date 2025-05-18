@@ -13,6 +13,7 @@ body {
   padding: 1rem;
   max-width: 960px;
   margin: auto;
+  text-align: justify;
 }
 
 main section {
