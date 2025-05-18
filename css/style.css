@@ -19,20 +19,6 @@
   --bg1g: 240; /* Green component */
   --bg1b: 243; /* Blue component */
 }
-.dark-theme{
-  --primary-color: #201E43;
-  --secondary-color: #134B70;
-  --third-color: #6482AD;
-  --fourth-color: #7FA1C3;
-  --fifth-color: #EEEEEE;
-  --white: #000000;
-  --black: #FFFFFF;
-  --bg1: #201E43;
-  --bg2: #293E52;
-  --bg1r: 32; /* Red component */
-  --bg1g: 30; /* Green component */
-  --bg1b: 67; /* Blue component */
-}
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
