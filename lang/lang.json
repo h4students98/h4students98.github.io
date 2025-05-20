@@ -36,25 +36,25 @@
       "school_section": "Presentazioni per la scuola",
 
       "fake_news_title": "Fake News",
-      "fake_news_desc": "Una lezione di cittadinanza sulle Fake News, con un esercizio da proporre alla classe.",
+      "fake_news_desc": "Una lezione di cittadinanza sulle Fake News, con un esercizio da proporre alla classe. Lo scopo del progetto è sensibilizzare gli adolescenti all'uso corretto dei media attuali per la raccolta di informazioni e notizie.",
 
       "color_title" : "Teoria dei Colori",
-      "color_desc" : "Una lezione di approfondimento sulla fisica dei colori, con link a simulazioni utili.",
+      "color_desc" : "Una lezione di approfondimento sulla fisica dei colori, con link a simulazioni utili. Lo scopo è cercare di dare un quadro multidisciplinare dove storia, fisica, biologia e arte si incontrano e intersecano per spiegare la realtà.",
 
       "tdad_title": "Simulazione CCD con Arduino",
-      "tdad_desc": "Simulazione dell’acquisizione dati da spettrometro Raman con Arduino, C++ e Bash.",
+      "tdad_desc": "Simulazione dell’acquisizione dati da spettrometro Raman con Arduino, C++ e Bash. Lo scopo del progetto è sviluppare una pipeline per la raccolta, l'organizzazione e l'analisi di dati provenienti da un dispositivo elettronico in tempo reale.",
 
       "thesis_bachelor_title": "Tesi triennale - Analisi Raman",
-      "thesis_bachelor_desc": "Analisi spettroscopica degli inchiostri nei disegni di Lucio Fontana.",
+      "thesis_bachelor_desc": "Analisi spettroscopica degli inchiostri utilizzati da Lucio Fontana nelle sue opere. Il lavoro è compilativo e lo scopo è mostrare un'applicazione multidisciplinare della fisica attraverso un caso studio particolare.",
 
       "energy_title": "Energia solare e fotovoltaico",
-      "energy_desc": "Approfondimento sullo stato della ricerca e degli impianti fotovoltaici.",
+      "energy_desc": "Un breve approfondimento sullo stato della ricerca e degli impianti fotovoltaici. Il progetto è uno sguardo generale all'argomento utilizzando differenti articoli scientifici come riferimento.",
 
       "ml_title": "Classificazione radar con ML",
-      "ml_desc": "Applicazione di tecniche di analisi dati e di machine learning per la classificazione di segnali radar ionosferici con reti neurali e machine learning.",
+      "ml_desc": "Applicazione di tecniche di analisi dati e di machine learning per la classificazione di segnali radar ionosferici. Il progetto include un confronto statistico tra le performances di approcci differenti in modo da trovare la soluzione più ottimale per la classificazione.",
 
       "thesis_master_title": "Tesi magistrale - Phasor Hyperspectral",
-      "thesis_master_desc": "Analisi con fasori su immagini iperspettrali per identificare malattie nelle piante.",
+      "thesis_master_desc": "Analisi con fasori su immagini iperspettrali per identificare malattie nelle piante. Lo scopo del lavoro è provare a proporre una pipeline che va dalla raccolta dati al riconoscimento delle malattie utilizzando IA.",
 
       "old_site_title": "Il mio vecchio sito personale",
       "old_site_desc": "Altri progetti relativi alla didattica o più personali sono presenti nel vecchio sito, meno professionale."
@@ -73,10 +73,9 @@
       "bio_title_now": "Attualmente",
       "bio_title_myself": "In generale",
       "bio_text": "Sono un docente di matematica e fisica, appassionato di programmazione, fotografia e divulgazione scientifica.",
-      "bio_text": "I’m a high school teacher in math and physics, passionate about programming, photography, and science outreach.",
-      "bio_education" : "Sono laureato magistrale in Fisica della Materia presso l’Università degli Studi di Milano-Bicocca. Nel corso del mio percorso accademico ho approfondito gli aspetti applicativi della fisica, con un’attenzione multidisciplinare che ha spaziato dall’arte all'ambito energetico. Una parte significativa del mio curriculum ha riguardato l’impiego di tecniche di analisi dati, machine learning e simulazione.",
-      "bio_now" : "Insegno Matematica e Fisica presso il Liceo Ginnasio Statale B. Cairoli di Vigevano. L'esperienza mi permette di coltivare competenze trasversali di comunicazione e teamwork, oltre che organizzazione.",
-      "bio_myself" : "Sono motivato dall’apprendimento continuo e interessato ai settori EdTech, energia e gestione dati, con disponibilità a trasferte nazionali e internazionali."
+      "bio_education" : "Ho conseguito la laurea magistrale in Fisica della Materia presso l’Università degli Studi di Milano-Bicocca. Durante il mio percorso accademico, ho approfondito le applicazioni della fisica in ambiti interdisciplinari, dall’energia all’arte. Ho inoltre acquisito competenze di base nell’analisi dei dati, nel machine learning e nella simulazione numerica.",
+      "bio_now" : "Attualmente insegno Matematica e Fisica presso il Liceo Ginnasio Statale B. Cairoli di Vigevano. Questo ruolo mi ha permesso di sviluppare competenze nella comunicazione, nella collaborazione e nell’organizzazione del lavoro in classe.",
+      "bio_myself" : "Sono motivato dall’apprendimento continuo e interessato ai settori EdTech, energia e gestione dati.  Sono disponibile per opportunità sia a livello nazionale che internazionale."
 
     }
   },
@@ -117,35 +116,35 @@
       "school_section": "School Presentations",
 
       "fake_news_title": "Fake News",
-      "fake_news_desc": "A citizenship education lesson on fake news, with an activity to propose in class.",
+      "fake_news_desc": "A civic education activity focused on fake news, including a class-ready exercise.",
 
       "color_title" : "Color Theory",
-      "color_desc" : "An in-depth lesson on the physics of colors, including links to helpful simulations.",
+      "color_desc" : "A physics-based lesson on color perception, including links to supporting simulations.",
 
       "tdad_title": "CCD Simulation with Arduino",
-      "tdad_desc": "Data acquisition from Raman spectrometer simulated with Arduino, C++ and Bash.",
+      "tdad_desc": "Simulation of data acquisition from a Arduino simulated Raman spectrometer using C++, and Bash. The goal was to create a real-time pipeline for data collection, organization, and analysis from an electronic device.",
 
-      "thesis_bachelor_title": "Bachelor Thesis - Raman Analysis",
-      "thesis_bachelor_desc": "Spectroscopic study of ink on drawings by Lucio Fontana using Raman technique.",
+      "thesis_bachelor_title": "Bachelor Thesis - Raman Analysis of Lucio Fontana's inks",
+      "thesis_bachelor_desc": "Spectroscopic analysis of the inks used by Lucio Fontana in his artworks, using Raman techniques. The project highlights a multidisciplinary approach to physical analysis through a concrete case study.",
 
       "energy_title": "Solar and Photovoltaic Energy",
-      "energy_desc": "Study of photovoltaic energy, current status, challenges and research trends.",
+      "energy_desc": "An overview of photovoltaic energy: current state, challenges, and research directions. The project summarizes insights from multiple scientific papers.",
 
       "ml_title": "Radar Classification with ML",
-      "ml_desc": "Data analysis and machine learning techniques applied to the classification of ionospheric radar signals via neural networks.",
+      "ml_desc": "Application of data analysis and machine learning to classify ionospheric radar signals. The project includes a statistical comparison of different models to identify the most effective approach.",
 
       "thesis_master_title": "Master Thesis - Hyperspectral Phasors Analysis",
-      "thesis_master_desc": "Phasor-based analysis of hyperspectral images for plant disease detection.",
+      "thesis_master_desc": "Phasor-based analysis of hyperspectral images for early detection of plant diseases. The project explores the full workflow from data collection to AI-based classification.",
 
       "old_site_title": "My old website",
-      "old_site_desc": "Additional projects, including those related to teaching or of a more personal nature, can be found on my older and less formal website."
+      "old_site_desc": "More projects—including teaching materials and personal content—are available on my older, less formal website."
 
     },
     "resources": {
       "title": "Teaching Materials",
       "resource1_title": "Resources for Students",
       "resource2_title": "Simulations for Students",
-      "resource1_desc": "Currently not available in this version. However, you can find them on the",
+      "resource1_desc": "Currently not available on this version of the site. You can still access them through the",
       "resources_old_site": "Old version of the website"
     },
     "personal": {
@@ -154,10 +153,10 @@
       "bio_title_ed": "Education",
       "bio_title_now": "Current Position",
       "bio_title_myself": "A brief description",
-      "bio_text": "I’m a high school teacher in math and physics, passionate about programming, photography, and science outreach.",
-      "bio_education" : "I hold a Master's degree in Condensed Matter Physics from the University of Milano-Bicocca. Throughout my academic journey, I have deepened my understanding of applied physics, with a multidisciplinary focus spanning from art to energy. A significant portion of my curriculum involved the application of advanced data analysis techniques, machine learning, and simulation.",
-      "bio_now": "I currently teach Mathematics and Physics at the Liceo Ginnasio Statale B. Cairoli in Vigevano. This experience allows me to develop transversal skills such as communication, teamwork, and organization.",
-      "bio_myself" : "I am motivated by continuous learning and have a keen interest in the EdTech, energy, and data management sectors, with availability for both national and international business trips."
+      "bio_text": "I’m a high school teacher in Mathematics and Physics, with a passion for programming, photography, and science communication.",
+      "bio_education" : "I hold a Master's degree in Condensed Matter Physics from the University of Milano-Bicocca. During my academic path, I explored applications of physics across disciplines—from energy to art. I also gained foundational skills in data analysis, machine learning, and numerical simulation.",
+      "bio_now": "I currently teach Mathematics and Physics at Liceo Ginnasio Statale B. Cairoli in Vigevano. This role has helped me develop skills in communication, collaboration, and classroom organization.",
+      "bio_myself" : "I am motivated by continuous learning and have a keen interest in the EdTech, energy, and and data-driven solutions. I’m available for both national and international opportunities."
     }
   }
 }
