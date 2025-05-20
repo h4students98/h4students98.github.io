@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  /*background-color: #f9f9f9; */
+  color: #333;
+  padding: 1rem;
+  max-width: 960px;
+  margin: auto;
+}
 :root{
   --primary-color: #EEEEEE;
   --secondary-color: #7FA1C3;
@@ -15,15 +24,15 @@
   --black: #000000;
   --bg1: #DDE2E6;
   --bg2: #F5F7FA;
-  --bg1r: 233; /* Red component */
-  --bg1g: 240; /* Green component */
-  --bg1b: 243; /* Blue component */
+  --bg1r: 233; 
+  --bg1g: 240; 
+  --bg1b: 243; 
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.6;
-  /* background-color: #f9f9f9; */
+  background-color: #f9f9f9;
   color: #333;
   padding: 1rem;
   max-width: 960px;
@@ -31,7 +40,7 @@ body {
   text-align: justify;
 
   background-color: var(--primary-color);
-    --s: 102px; /* control the size*/
+    --s: 102px; 
   --c1: var(--bg1);
   --c2: var(--white);
   --c3: var(--bg2);
