@@ -45,6 +45,8 @@ function setLanguage(lang) {
       currentLang = lang;
       document.documentElement.lang = lang;
 
+      updateCVLink(lang); //Chiama la funzione per aggiornare il CV
+
       // (DEBUG opzionale)
       console.log("✅ Chiavi generate:", generatedKeys);
     })
