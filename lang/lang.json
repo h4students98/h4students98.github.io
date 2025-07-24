@@ -73,8 +73,8 @@
       "bio_title_now": "Attualmente",
       "bio_title_myself": "In generale",
       "bio_text": "Sono un docente di matematica e fisica, appassionato di programmazione, fotografia e divulgazione scientifica.",
-      "bio_education" : "Ho conseguito la laurea magistrale in Fisica della Materia presso l’Università degli Studi di Milano-Bicocca. Durante il mio percorso accademico, ho approfondito le applicazioni della fisica in ambiti interdisciplinari, dall’energia all’arte. Ho inoltre acquisito competenze di base nell’analisi dei dati, nel machine learning e nella simulazione numerica.",
-      "bio_now" : "Attualmente insegno Matematica e Fisica presso il Liceo Ginnasio Statale B. Cairoli di Vigevano. Questo ruolo mi ha permesso di sviluppare competenze nella comunicazione, nella collaborazione e nell’organizzazione del lavoro in classe.",
+      "bio_education" : "Ho conseguito la laurea magistrale in Fisica della Materia presso l’Università degli Studi di Milano-Bicocca. Durante il mio percorso accademico, ho approfondito le applicazioni della fisica in ambiti interdisciplinari, dall’energia all’arte. Ho inoltre acquisito competenze di base nell’analisi dei dati, nel machine learning e nella simulazione numerica. Nell'ultimo hanno ho potuto insegnare Matematica e Fisica presso il Liceo Ginnasio Statale B. Cairoli di Vigevano. Questo ruolo mi ha permesso di sviluppare competenze nella comunicazione, nella collaborazione e nell’organizzazione del lavoro in classe.",
+      "bio_now" : "Attualmente sono alla ricerca di un lavoro più tecnico e che mi riavvicini e mi permetta di sviluppare gli aspetti fisico-informatici legati al mio percorso di formazione",
       "bio_myself" : "Sono motivato dall’apprendimento continuo e interessato ai settori EdTech, energia e gestione dati.  Sono disponibile per opportunità sia a livello nazionale che internazionale."
 
     }
@@ -154,8 +154,8 @@
       "bio_title_now": "Current Position",
       "bio_title_myself": "A brief description",
       "bio_text": "I’m a high school teacher in Mathematics and Physics, with a passion for programming, photography, and science communication.",
-      "bio_education" : "I hold a Master's degree in Condensed Matter Physics from the University of Milano-Bicocca. During my academic path, I explored applications of physics across disciplines—from energy to art. I also gained foundational skills in data analysis, machine learning, and numerical simulation.",
-      "bio_now": "I currently teach Mathematics and Physics at Liceo Ginnasio Statale B. Cairoli in Vigevano. This role has helped me develop skills in communication, collaboration, and classroom organization.",
+      "bio_education": "I hold a Master's degree in Condensed Matter Physics from the University of Milano-Bicocca. During my academic path, I explored interdisciplinary applications of physics—from energy to art—and gained foundational skills in data analysis, machine learning, and numerical simulation. Over the past year, I taught Mathematics and Physics at Liceo Ginnasio Statale B. Cairoli in Vigevano, developing strong skills in communication, collaboration, and classroom management.",
+      "bio_now": "I am currently seeking a more technical position that brings me closer to the computational and physics-based aspects of my background, allowing me to further develop them in a professional setting.",
       "bio_myself" : "I am motivated by continuous learning and have a keen interest in the EdTech, energy, and and data-driven solutions. I’m available for both national and international opportunities."
     }
   }
